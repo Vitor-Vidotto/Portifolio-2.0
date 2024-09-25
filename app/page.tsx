@@ -39,7 +39,7 @@ export default function Home() {
       rel="noopener noreferrer"
     >
       <Image
-        className="dark:invert"
+        className="dark"
         src="/website.svg"
         alt="Vercel logomark"
         width={20}
@@ -54,7 +54,7 @@ export default function Home() {
       rel="noopener noreferrer"
     >
       <Image
-        className="dark:invert"
+        className="dark"
         src="/person.svg"
         alt="Vercel logomark"
         width={20}
@@ -70,7 +70,7 @@ export default function Home() {
     rel="noopener noreferrer"
   >
     <Image
-      className="dark:invert"
+      className="dark"
       src="/curriculum.svg"
       alt="Vercel logomark"
       width={20}

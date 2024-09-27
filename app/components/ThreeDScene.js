@@ -12,45 +12,48 @@ const ThreeDScene = () => {
     
     renderer.setSize(100, 100);
     containerRef.current.appendChild(renderer.domElement);
-
+  
     createHead(scene);
     createEyes(scene);
     createHat(scene);
-      setupCamera();
-
+    setupCamera();
+  
     const isMobile = window.innerWidth < 768; // Verifica se é mobile
-
+  
     const handleOrientation = (event) => {
       const beta = event.beta; // Tilt para cima/baixo
       const gamma = event.gamma; // Tilt para os lados
       head.rotation.x = (beta / 180) * Math.PI / 2; // Ajuste conforme necessário
-      head.rotation.y = (gamma / 360) * Math.PI /2 ; // Ajuste conforme necessário
+      head.rotation.y = (gamma / 360) * Math.PI / 2; // Ajuste conforme necessário
     };
-
+  
     if (isMobile) {
       window.addEventListener('deviceorientation', handleOrientation);
     } else {
       document.onmousemove = onMouseMove;
     }
-
+  
     const animate = () => {
       requestAnimationFrame(animate);
       if (!isMobile) {
         const centerX = window.innerWidth;
         const centerY = window.innerHeight / 2;
-        head.rotation.y = (mouseX - centerX) / centerX * Math.PI / 4;
-        head.rotation.x = (mouseY - centerY) / centerY * Math.PI / 4;
+        head.rotation.y = ((mouseX - centerX) / centerX) * Math.PI / 4;
+        head.rotation.x = ((mouseY - centerY) / centerY) * Math.PI / 4;
       }
       renderer.render(scene, camera);
     };
-
+  
     animate();
-
+  
     return () => {
       window.removeEventListener('deviceorientation', handleOrientation);
-      containerRef.current.removeChild(renderer.domElement);
+      if (containerRef.current && renderer.domElement) {
+        containerRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
+  
 
   const setupCamera = () => {
     camera.position.z = 2;

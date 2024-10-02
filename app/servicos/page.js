@@ -1,15 +1,15 @@
-'use client'
-import Navbar from "../components/NavBars";
-import ProjectsSection from "../components/ProjectsSection";
+import Navbar from "../components/Navbars";
+import ServicesSection from "../components/ServicesSection";
+import ServicesPriceSection from "../components/ServicesPriceSection";
 import ThreeDScene from "../components/ThreeDScene";
 
-export default function Projetos() {
+export default function Servico() {
   return (
-    <main className="flex min-h-screen flex-col ">
+    <main className="flex min-h-screen flex-col">
       <Navbar />
-
       <div className="container mt-24 mx-auto px-12 py-4">
-        <ProjectsSection />
+        <ServicesSection />
+        <ServicesPriceSection />
       </div>
       <a
   href="https://www.linkedin.com/in/vitor-vidotto"
@@ -20,8 +20,6 @@ export default function Projetos() {
 >
   <ThreeDScene />
 </a>
-
-
     </main>
   );
 }

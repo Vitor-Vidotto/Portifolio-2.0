@@ -54,7 +54,7 @@ const ProjectsSectionPortifolio = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-black mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Veja alguns projetos:
       </h2>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

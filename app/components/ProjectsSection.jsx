@@ -7,57 +7,48 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Portifólio dev",
-    description: "Um portifólio digital onde o desenvolvedor pode mostrar os seus projetos",
+    title: "Aplicativo de listagem de filmes",
+    description: "Uma aplicação onde o usuário pode ver os filmes disponíveis e ler a descrição.",
     image: "/images/projects/1.png",
-    tag: ["Todos", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Todos", "Celular"],
+    gitUrl: "https://github.com/Vitor-Vidotto/FavMovies",
+    previewUrl: "https://github.com/Vitor-Vidotto/FavMovies",
   },
   {
     id: 2,
-    title: "Portifólio de fotografias",
-    description: "Um projeto feito para um fotografo que quis um portifólio virtual para enviar para seus clientes",
+    title: "App de Controle C#",
+    description: " Desenvolvi um projeto em c# onde o mesmo serve para monitorar e enviar arquivos via FTP, fazendo que os mesmos sirvam de backup para a maquina e que sirva também para controle e geração de logs.",
     image: "/images/projects/2.png",
-    tag: ["Todos", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Todos", "Desktop"],
+    gitUrl: "https://github.com/Vitor-Vidotto",
+    previewUrl: "https://github.com/Vitor-Vidotto",
   },
   {
     id: 3,
-    title: "E-commerce",
-    description: "Projeto de um site de vendas para uma loja de roupas",
+    title: "Portifólio Digital",
+    description: "Meu primeiro portifólio digital feito em angular para estudo e uso próprio",
     image: "/images/projects/3.png",
     tag: ["Todos", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Vitor-Vidotto/Portifolio",
+    previewUrl: "https://vitor-vidotto.github.io/Portifolio/",
   },
   {
     id: 4,
-    title: "Aplicação de um restaurante",
+    title: "Protótipo de site empresarial",
     description: "Uma aplicação desenvolvida para um restaurante, para que os clientes tenham a opção de pedir online",
     image: "/images/projects/4.png",
-    tag: ["Todos", "Celular"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/AutomatizaLabs/AutomatizaLabs",
+    previewUrl: "https://github.com/AutomatizaLabs/AutomatizaLabs",
   },
   {
     id: 5,
-    title: "template para o firebase",
-    description: "Uma interface que busca ajudar desenvolvedores ao trabalharem com o banco de dados FireBase da Google",
-    image: "/images/projects/5.png",
-    tag: ["Todos", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Aplicação para organização",
-    description: "Um projeto desenvolvido para proporcionar organização pessoal e empresaria ",
+    title: "Automações em Python",
+    description: "Desenvolvi automações para processos de empresas em python",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Todos", "Desktop"],
+    gitUrl: "https://github.com/Vitor-Vidotto/python-automations",
+    previewUrl: "https://github.com/Vitor-Vidotto/python-automations",
   },
 ];
 
@@ -80,11 +71,12 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section id="projects" className="px-4">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-whiten mt-4 mb-8 md:mb-12">
         Meus Projetos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        main
         <ProjectTag
           onClick={handleTagChange}
           name="Todos"
@@ -100,8 +92,16 @@ const ProjectsSection = () => {
           name="Celular"
           isSelected={tag === "Celular"}
         />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Desktop"
+          isSelected={tag === "Desktop"}
+        />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul
+        ref={ref}
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -85,14 +86,14 @@ const ThreeDScene = () => {
   const createHat = (scene) => {
     // Criar a base do chapéu (círculo)
     const baseGeometry = new THREE.CylinderGeometry(0.8, 0.8, 0.1, 32);
-    const baseMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+    const baseMaterial = new THREE.MeshBasicMaterial({ color: 0x393939 });
     const base = new THREE.Mesh(baseGeometry, baseMaterial);
     base.position.y = 0.55; // Levanta a base um pouco acima da cabeça
     scene.add(base);
   
     // Criar a elevação do chapéu (cilindro)
     const crownGeometry = new THREE.CylinderGeometry(0.5, 0.7, 0.3, 32);
-    const crownMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
+    const crownMaterial = new THREE.MeshBasicMaterial({ color: 0x393939 });
     const crown = new THREE.Mesh(crownGeometry, crownMaterial);
     crown.position.y = 0.85; // Levanta a coroa um pouco acima da base
     scene.add(crown);

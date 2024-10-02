@@ -3,11 +3,12 @@ import Image from "next/image";
 import NavBars from "./components/NavBars";
 import ThreeDScene from "./components/ThreeDScene"
 import TypewriterLoop from "./components/typeloop";
+import Navbar from "./components/NavBars";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <NavBars />
+      <Navbar />
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
@@ -25,7 +26,7 @@ export default function Home() {
         </ol>
 
         <a
-  href="https://www.linkedin.com/in/vitor-vidotto-334912253" // Substitua pelo seu link do LinkedIn
+  href="https://www.linkedin.com/in/vitor-vidotto"
   target="_blank" // Abre em uma nova aba
   rel="noopener noreferrer" // Para segurança
   className="absolute bottom-0 right-0 m-4 rounded-full flex items-center justify-center text-sm sm:text-base"
@@ -37,8 +38,7 @@ export default function Home() {
   <div className="flex gap-2">
     <a
       className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-      href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-      target="_blank"
+      href="/projetos"
       rel="noopener noreferrer"
     >
       <Image
@@ -52,8 +52,7 @@ export default function Home() {
     </a>
     <a
       className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-      href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-      target="_blank"
+      href="/quem-sou"
       rel="noopener noreferrer"
     >
       <Image
@@ -87,18 +86,18 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://br.linkedin.com/in/vitor-vidotto"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/file.svg"
+            src="/linkedin.svg"
             alt="File icon"
             width={16}
             height={16}
           />
-          Github
+          LinkedIn
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -108,27 +107,27 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/window.svg"
+            src="/whatsapp.svg"
             alt="Window icon"
             width={16}
             height={16}
           />
-          Projetos
+          WhatsApp
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://br.linkedin.com/in/vitor-vidotto"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
+            src="/instagram.svg"
             alt="Globe icon"
             width={16}
             height={16}
           />
-          Serviços →
+          Instagram →
         </a>
       </footer>
     </div>

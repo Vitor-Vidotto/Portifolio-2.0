@@ -15,11 +15,12 @@ export default function Projetos() {
   href="https://www.linkedin.com/in/vitor-vidotto"
   target="_blank"
   rel="noopener noreferrer"
-  className="sticky bottom-0 right-0 m-4 rounded-full flex items-center justify-end text-sm sm:text-base md:absolute md:bottom-4 md:right-4"
+  className="fixed bottom-4 right-4 m-4 rounded-full flex items-center justify-end text-sm sm:text-base"
   title="Entrar em contato"
 >
   <ThreeDScene />
 </a>
+
 
     </main>
   );

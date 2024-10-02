@@ -3,6 +3,19 @@ import React from "react";
 import { Chrono } from "react-chrono";
 
 const TIMELINE_DATA = [
+    {
+        title: "2022 - 2022",
+        cardTitle: "Exercito - Forças Armadas",
+        cardSubtitle: "Atirador -> Cabo da reserva",
+        cardDetailedText:
+          "Desenvolvi conhecimentos de liderança, trabalho em equipe, colaboração, hierarquia e como agir sobre pressão.",
+        media: {
+          type: "IMAGE",
+          source: {
+            url: "/images/liga-facens.jpg",
+          },
+        },
+      },
   {
     title: "2022 - 2023",
     cardTitle: "LIGA FACENS - Laboratório de Inovação de Games e Apps",
@@ -51,7 +64,13 @@ const Timeline = () => {
         items={TIMELINE_DATA}
         mode="VERTICAL_ALTERNATING"
         disableToolbar
-        cardHeight={200}
+        fontSizes={{
+            cardSubtitle: '0.85rem',
+            cardText: '0.8rem',
+            cardTitle: '1rem',
+            title: '1rem',
+          }}
+          highlightCardsOnHover
         theme={{
           primary: "#0047AB",
           secondary: "#D3D3D3",

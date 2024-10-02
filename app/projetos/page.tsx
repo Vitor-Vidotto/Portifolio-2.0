@@ -12,15 +12,15 @@ export default function Projetos() {
         <ProjectsSection />
       </div>
       <a
-  href="https://www.linkedin.com/in/vitor-vidotto-334912253" // Substitua pelo seu link do LinkedIn
-  target="_blank" // Abre em uma nova aba
-  rel="noopener noreferrer" // Para segurança
-  className="sticky bottom-0 right-0 m-4 rounded-full flex items-center justify-end text-sm sm:text-base"
-  style={{ position: 'sticky', float: 'right' }}
-  title="Entrar em contato" // Mensagem ao passar o mouse
+  href="https://www.linkedin.com/in/vitor-vidotto"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="sticky bottom-0 right-0 m-4 rounded-full flex items-center justify-end text-sm sm:text-base md:absolute md:bottom-4 md:right-4"
+  title="Entrar em contato"
 >
   <ThreeDScene />
 </a>
+
     </main>
   );
 }

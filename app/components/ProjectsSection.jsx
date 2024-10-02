@@ -76,7 +76,6 @@ const ProjectsSection = () => {
         Meus Projetos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        main
         <ProjectTag
           onClick={handleTagChange}
           name="Todos"

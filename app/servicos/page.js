@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbars";
+import Navbar from "../components/NavBars";
 import ServicesSection from "../components/ServicesSection";
 import ServicesPriceSection from "../components/ServicesPriceSection";
 import ThreeDScene from "../components/ThreeDScene";

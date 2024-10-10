@@ -101,7 +101,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -116,7 +116,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://br.linkedin.com/in/vitor-vidotto"
+          href="https://www.instagram.com/soy.vidotto/"
           target="_blank"
           rel="noopener noreferrer"
         >

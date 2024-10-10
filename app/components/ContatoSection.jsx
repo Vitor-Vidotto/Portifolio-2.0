@@ -61,7 +61,7 @@ const ContatoSection = () => {
                 </a>
 
                 <a
-                    href="https://forms.gle/9eMeo2jCBrT7FDEm6"
+                    href="https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex flex-col items-center transition-transform duration-1000 transform ${isVisible ? "translate-x-0" : "translate-x-20"} opacity-${isVisible ? "100" : "0"} hover:scale-110`}

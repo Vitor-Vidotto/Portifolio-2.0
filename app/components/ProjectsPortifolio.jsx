@@ -34,13 +34,10 @@ const projectsDataPortifolio = [
 ];
 
 const ProjectsSectionPortifolio = () => {
-  const [tag, setTag] = useState("All");
+  const [tag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
 
   const filteredProjects = projectsDataPortifolio.filter((project) =>
     project.tag.includes(tag)

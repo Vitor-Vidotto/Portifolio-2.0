@@ -69,7 +69,7 @@ const TAB_DATA = [
 
 const ServicesSection = () => {
   const [tab, setTab] = useState("servicos");
-  const [isPending, startTransition] = useTransition();
+  const [startTransition] = useTransition();
 
   const handleTabChange = (id) => {
     startTransition(() => {

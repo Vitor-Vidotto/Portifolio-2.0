@@ -4,55 +4,100 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [
+const servicesData = [
 
   {
     id: 1,
-    title: "Website Empresarial",
-    description: "Project 1 description",
-    image: "/images/projects/3.png",
+    title: "Sites Personalizados",
+    description: "Desenvolvimento de sites exclusivos, adaptados às necessidades específicas de cada cliente.",
+    image: "/images/servicos/site.customizado.png",
     tag: ["Todos", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20um%20Site%20Personalizado.",
   },
 
   {
     id: 2,
-    title: "Aplicativo para Celular",
-    description: "Project 2 description",
-    image: "/images/projects/1.png",
-    tag: ["Todos", "Celular"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Sites Pre-Moldados",
+    description: "Sites criados com modelos pré-definidos para uma solução rápida e acessível.",
+    image: "/images/servicos/site.premoldado.png",
+    tag: ["Todos", "Web"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20um%20Site%20Pre-Moldado.",
   },
+
   {
     id: 3,
-    title: "Sistemas de backup",
-    description: "Project 3 description",
-    image: "/images/projects/2.png",
-    tag: ["Todos", "Softwere"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Automação",
+    description: "Automação de testes ou serviços.",
+    image: "/images/servicos/automacao.png",
+    tag: ["Todos", "Software", "Automações"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Testes%20ou%20Serviços%20Automatizados.",
   },
+
   {
     id: 4,
-    title: "Automação de Sistemas",
-    description: "Project 4 description",
-    image: "/images/projects/6.png",
-    tag: ["Todos", "Automações"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Atualização de Sites",
+    description: "Manutenção e atualização de sites para garantir a relevância e desempenho contínuo.",
+    image: "/images/servicos/web.update.png",
+    tag: ["Todos", "Web"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Atualiza%C3%A7%C3%A3o%20de%20Sites.",
   },
+
   {
-    id: 4,
-    title: "Aplicativo de Gerenciamento",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    id: 5,
+    title: "Adaptação de Sites para Celulares",
+    description: "Otimização de sites para uma navegação perfeita em dispositivos móveis.",
+    image: "/images/servicos/conversao.png",
     tag: ["Todos", "Celular"],
-    gitUrl: "/",
-    previewUrl: "/",
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Adapta%C3%A7%C3%A3o%20de%20Sites%20para%20Celulares.",
   },
+
+  {
+    id: 6,
+    title: "Aplicações para Celular",
+    description: "Desenvolvimento de aplicativos para dispositivos móveis, com foco em usabilidade e performance.",
+    image: "/images/servicos/celular.png",
+    tag: ["Todos", "Celular"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Aplica%C3%A7%C3%B5es%20para%20Celular.",
+  },
+
+  {
+    id: 7,
+    title: "Sistemas de Backup",
+    description: "Soluções de backup seguras e confiáveis para proteger dados críticos.",
+    image: "/images/servicos/backup.png",
+    tag: ["Todos", "Software"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Solu%C3%A7%C3%B5es%20de%20Backup.",
+  },
+
+  {
+    id: 8,
+    title: "Automação de Emails",
+    description: "Configuração de automações para envios de emails de forma eficiente e programada.",
+    image: "/images/servicos/automacao.email.png",
+    tag: ["Todos", "Automações"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Automatizar%20Emails.",
+  },
+
+  {
+    id: 9,
+    title: "Automação de Postagens",
+    description: "Automação de postagens em redes sociais, facilitando o gerenciamento de conteúdo.",
+    image: "/images/servicos/Automacao.redes.png",
+    tag: ["Todos", "Automações"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Automatizar%20Postagens.",
+  },
+
+  {
+    id: 10,
+    title: "Consultoria de Software / Hardware",
+    description: "Consultoria especializada para soluções de software personalizadas e eficazes.",
+    image: "/images/servicos/consultoria.png",
+    tag: ["Todos", "Consultoria", "Software"],
+    whatsappUrl: "https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20Consultoria%20de%20TI.",
+  },
+
 ];
+
 
 const ServicesPriceSection = () => {
   const [tag, setTag] = useState("Todos");
@@ -63,7 +108,7 @@ const ServicesPriceSection = () => {
     setTag(newTag);
   };
 
-  const filteredProjects = projectsData.filter((project) =>
+  const filteredProjects = servicesData.filter((project) =>
     project.tag.includes(tag)
   );
 
@@ -117,9 +162,9 @@ const ServicesPriceSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
+              isContact={true}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              whatsappUrl={project.whatsappUrl}
             />
           </motion.li>
         ))}

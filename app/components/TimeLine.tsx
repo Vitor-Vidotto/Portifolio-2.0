@@ -3,6 +3,19 @@ import React from "react";
 import { Chrono } from "react-chrono";
 
 const TIMELINE_DATA = [
+  {
+    title: "2020 - 2022",
+    cardTitle: "Autônomo",
+    cardSubtitle: "Programador / Administrador",
+    cardDetailedText:
+      "Desenvolvi servidores de jogos, sites e aplicações para clientes e publicos alvos.",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: "/images/logos/autonomo.png",
+      },
+    },
+  },
     {
         title: "2022 - 2022",
         cardTitle: "Exercito - Forças Armadas",
@@ -12,7 +25,7 @@ const TIMELINE_DATA = [
         media: {
           type: "IMAGE",
           source: {
-            url: "/images/liga-facens.jpg",
+            url: "/images/logos/exercito.png",
           },
         },
       },
@@ -25,7 +38,7 @@ const TIMELINE_DATA = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/images/liga-facens.jpg",
+        url: "/images/logos/ligalogo.png",
       },
     },
   },
@@ -38,7 +51,7 @@ const TIMELINE_DATA = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/images/netcreator.jpg",
+        url: "/images/logos/netcreator.png",
       },
     },
   },
@@ -51,7 +64,7 @@ const TIMELINE_DATA = [
     media: {
       type: "IMAGE",
       source: {
-        url: "/images/alianca.jpg",
+        url: "/images/logos/aliancaengenharia.png",
       },
     },
   },

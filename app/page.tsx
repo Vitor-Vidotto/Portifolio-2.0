@@ -67,7 +67,7 @@ export default function Home() {
   </div>
   <a
     className="mt-2 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-    href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+    href="https://drive.google.com/file/d/1L3qRZ01JxPr1vs457VIfkjnzQTr71uWh/view?usp=drive_link"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -101,7 +101,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://wa.me/5515992609453?text=Ol%C3%A1%2C%20tudo%20bem%3F%20"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -116,7 +116,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://br.linkedin.com/in/vitor-vidotto"
+          href="https://www.instagram.com/soy.vidotto/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -2,12 +2,7 @@ import Navbar from "../components/NavBars";
 import ThreeDScene from "../components/ThreeDScene";
 import AboutSection from "../components/AboutSection";
 import ProjectsSectionPortifolio from "../components/ProjectsPortifolio";
-import dynamic from 'next/dynamic';
-
-const Timeline = dynamic(() => import('../components/TimeLine'), {
-  ssr: false, // Desativa a renderização no servidor
-});
-
+import Timeline from "../components/TimeLine";
 
 
 

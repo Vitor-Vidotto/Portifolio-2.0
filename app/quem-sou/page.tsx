@@ -1,7 +1,8 @@
 import Navbar from "../components/NavBars";
 import ThreeDScene from "../components/ThreeDScene";
 import AboutSection from "../components/AboutSection";
-import Timeline from "../components/TimeLine";
+import ProjectsSectionPortifolio from "../components/ProjectsPortifolio";
+
 
 
 
@@ -11,7 +12,7 @@ export default function QuemSou() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
       <AboutSection />
-      <Timeline />
+      <ProjectsSectionPortifolio />
       </div>
       <a
   href="https://www.linkedin.com/in/vitor-vidotto"

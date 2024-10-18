@@ -1,6 +1,7 @@
 import Navbar from "../components/NavBars";
 import ThreeDScene from "../components/ThreeDScene";
-import ContatoSection from "../components/ContatoSection";
+import AboutSection from "../components/AboutSection";
+
 
 
 export default function QuemSou() {
@@ -8,7 +9,7 @@ export default function QuemSou() {
     <main className="flex min-h-screen flex-col">
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
-        <ContatoSection />
+      <AboutSection />
       </div>
       <a
   href="https://www.linkedin.com/in/vitor-vidotto"

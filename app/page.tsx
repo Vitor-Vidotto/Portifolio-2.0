@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import NavBars from "./components/NavBars";
 import ThreeDScene from "./components/ThreeDScene"
 import TypewriterLoop from "./components/typeloop";
 import Navbar from "./components/NavBars";

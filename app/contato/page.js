@@ -1,7 +1,4 @@
 import Navbar from "../components/NavBars";
-import Timeline from "../components/TimeLine"; // Importando o componente Timeline
-import AboutSection from "../components/AboutSection";
-import ProjectsSectionPortifolio from "../components/ProjectsPortifolio";
 import ThreeDScene from "../components/ThreeDScene";
 import ContatoSection from "../components/ContatoSection";
 

@@ -2,6 +2,11 @@ import Navbar from "../components/NavBars";
 import ThreeDScene from "../components/ThreeDScene";
 import AboutSection from "../components/AboutSection";
 import ProjectsSectionPortifolio from "../components/ProjectsPortifolio";
+import dynamic from 'next/dynamic';
+
+const Timeline = dynamic(() => import('../components/TimeLine'), {
+  ssr: false, // Desativa a renderização no servidor
+});
 
 
 
@@ -12,6 +17,7 @@ export default function QuemSou() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
       <AboutSection />
+      <Timeline />
       <ProjectsSectionPortifolio />
       </div>
       <a

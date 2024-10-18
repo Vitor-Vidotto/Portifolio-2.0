@@ -1,9 +1,11 @@
+import dynamic from "next/dynamic";
 import Navbar from "../components/NavBars";
 import ThreeDScene from "../components/ThreeDScene";
 import AboutSection from "../components/AboutSection";
 import ProjectsSectionPortifolio from "../components/ProjectsPortifolio";
-import Timeline from "../components/TimeLine";
-
+const Timeline = dynamic(() => import('../components/TimeLine'), {
+  ssr: false,
+});
 
 
 export default function QuemSou() {

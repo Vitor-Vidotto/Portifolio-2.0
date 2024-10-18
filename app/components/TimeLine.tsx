@@ -1,4 +1,4 @@
-"use client"
+  'use client'
 import React from "react";
 import { Chrono } from "react-chrono";
 
@@ -77,13 +77,6 @@ const Timeline = () => {
         items={TIMELINE_DATA}
         mode="VERTICAL_ALTERNATING"
         disableToolbar
-        fontSizes={{
-            cardSubtitle: '0.85rem',
-            cardText: '0.8rem',
-            cardTitle: '1rem',
-            title: '1rem',
-          }}
-          highlightCardsOnHover
         theme={{
           primary: "#0047AB",
           secondary: "#D3D3D3",
